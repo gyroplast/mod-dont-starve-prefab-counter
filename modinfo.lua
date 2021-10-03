@@ -6,7 +6,7 @@ _src_url = "https://github.com/gyroplast/mod-dont-starve-prefab-counter"
 
 name = "Prefab Counter"
 author = "Gyroplast"
-version = "1.0.0"
+version = "1.0.1"
 forumthread = ""
 api_version = 10
 dont_starve_compatible = false
@@ -19,7 +19,7 @@ client_only_mod = false
 server_filter_tags = {"prefab counter"}
 
 description = trim [[
-Version __VERSION__
+Version __VERSION__, Steam ID 2618765953
 Easily count a configurable list of prefabs/items in a world, like walrus camps,
 amount of reeds, etc., to quickly check if a generated world is worth playing.
 
