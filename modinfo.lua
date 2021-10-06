@@ -6,7 +6,7 @@ _src_url = "https://github.com/gyroplast/mod-dont-starve-prefab-counter"
 
 name = "Prefab Counter"
 author = "Gyroplast"
-version = "1.0.1"
+version = "1.0.2"
 forumthread = ""
 api_version = 10
 dont_starve_compatible = false
@@ -215,7 +215,7 @@ configuration_options = {
         },
         default = true
     }, {
-        name = "count_saplings",
+        name = "count_sapling",
         label = "Saplings",
         hover = "Count number of saplings in the world.",
         options = {

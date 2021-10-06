@@ -14,4 +14,5 @@ M.COUNT_PREFAB_CONFIG_MAP = {
     reeds = {"reeds", "reeds_water"}
 }
 
+C = M
 return M

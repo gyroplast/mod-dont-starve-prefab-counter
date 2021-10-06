@@ -17,6 +17,7 @@ Just run `PC:Count()` in the remote console to show a fresh count of the items i
   - [Acknowledgements](#acknowledgements)
     - [Source Code](#source-code)
   - [Changelog](#changelog)
+    - [Version 1.0.2 (2021-10-06)](#version-102-2021-10-06)
     - [Version 1.0.1 (2021-10-04)](#version-101-2021-10-04)
     - [Version 1.0.0 (2021-10-03)](#version-100-2021-10-03)
 
@@ -49,7 +50,7 @@ The mod can count the following items, prefab names given for reference:
   - Pig Houses ("pighouse")
   - Rabbit Hutches ("rabbithouse")
   - Reeds ("reeds", "reeds_water")
-  - Saplings ("saplings")
+  - Saplings ("sapling")
   - Stone Fruit Bushes ("rock_avocado_bush")
   - Volt Goats ("lightninggoat")
   - Walrus Camps ("walrus_camp")
@@ -108,7 +109,7 @@ Below is a commented, comprehensive default configuration for this mod that can 
       count_rabbithouse=true,        -- Rabbit Hutches ("rabbithouse")
       count_reeds=true,              -- Reeds ("reeds", "reeds_water")
       count_rock_avocado_bush=true,  -- Stone Fruit Bushes ("rock_avocado_bush")
-      count_saplings=true,           -- Saplings ("saplings")
+      count_sapling=true,            -- Saplings ("sapling")
       count_statuemaxwell=true,      -- Maxwell Statues ("statuemaxwell")
       count_trap_starfish=true,      -- Anememies ("trap_starfish")
       count_walrus_camp=true,        -- Walrus Camps ("walrus_camp")
@@ -127,7 +128,7 @@ If you prefer to install the mod without using the Steam Workshop, download the 
 .../
     Don't Starve Together Dedicated Server/
         mods/
-            Prefab_Counter-1.0.0/
+            Prefab_Counter-1.0.2/
                 lib/
                 LICENSE
                 modicon.tex
@@ -141,18 +142,18 @@ If you prefer to install the mod without using the Steam Workshop, download the 
             modsettings.lua
 ```
 
-Take note of the *exact* name of the mod directory, `Prefab_Counter-1.0.0` in this example. The mod configuration must refer to this exact, case-sensitive directory name. The actual directory name is not important, but it must be consistent with the `modoverrides.lua` entry for the mod, otherwise the server will not be able to associate the configuration with the mod, and the mod will stay disabled entirely.
+Take note of the *exact* name of the mod directory, `Prefab_Counter-1.0.2` in this example. The mod configuration must refer to this exact, case-sensitive directory name. The actual directory name is not important, but it must be consistent with the `modoverrides.lua` entry for the mod, otherwise the server will not be able to associate the configuration with the mod, and the mod will stay disabled entirely.
 
 To achieve the required consistency, you may now either just rename the mod directory to `workshop-2618765953`, and edit the `modoverrides.lua` files exactly as described in the [Steam Workshop Installation above](#edit-modoverrideslua-in-servershard-directory), 
 
 **OR**
 
-replace the `workshop-2618765953` reference in the `modoverrides.lua` file with the exact, case-sensitive name of the mod, i. e. `Prefab_Counter-1.0.0` in this case, like this:
+replace the `workshop-2618765953` reference in the `modoverrides.lua` file with the exact, case-sensitive name of the mod, i. e. `Prefab_Counter-1.0.2` in this case, like this:
 
 ```lua
   -- Prefab Counter by Gyroplast
   -- https://steamcommunity.com/sharedfiles/filedetails/?id=2618765953
-  ["Prefab_Counter-1.0.0"]={
+  ["Prefab_Counter-1.0.2"]={
     configuration_options={
       [""]="",
       ...
@@ -186,6 +187,13 @@ applicable to the sources unless noted otherwise. Mod sources are hosted on
 
 Changelog
 ---------
+
+### Version 1.0.2 (2021-10-06)
+  **Bugfixes**
+  - server crash when run with Chat Announcements 1.2.0    
+    Fixes [#1](https://github.com/gyroplast/mod-dont-starve-prefab-counter/issues/1).
+  - count correct prefab for saplings    
+    Fixes [#2](https://github.com/gyroplast/mod-dont-starve-prefab-counter/issues/2).
 
 ### Version 1.0.1 (2021-10-04)
   - Initial Public Release, added Steam ID
