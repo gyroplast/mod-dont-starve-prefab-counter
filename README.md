@@ -17,6 +17,7 @@ Just run `PC:Count()` in the remote console to show a fresh count of the items i
   - [Acknowledgements](#acknowledgements)
     - [Source Code](#source-code)
   - [Changelog](#changelog)
+    - [Version 1.0.2 (2021-10-06)](#version-102-2021-10-06)
     - [Version 1.0.1 (2021-10-04)](#version-101-2021-10-04)
     - [Version 1.0.0 (2021-10-03)](#version-100-2021-10-03)
 
@@ -186,6 +187,13 @@ applicable to the sources unless noted otherwise. Mod sources are hosted on
 
 Changelog
 ---------
+
+### Version 1.0.2 (2021-10-06)
+  **Bugfixes**
+  - server crash when run with Chat Announcements 1.2.0    
+    Fixes [#1](https://github.com/gyroplast/mod-dont-starve-prefab-counter/issues/1).
+  - count correct prefab for saplings    
+    Fixes [#2](https://github.com/gyroplast/mod-dont-starve-prefab-counter/issues/2).
 
 ### Version 1.0.1 (2021-10-04)
   - Initial Public Release, added Steam ID
