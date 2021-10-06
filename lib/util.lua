@@ -2,7 +2,7 @@
 local M = {}
 local json = require("json")
 
-local TheNet = _G.TheNet
+local TheNet = GLOBAL.TheNet
 
 -- remove leading and trailing whitespace from a string
 function M.trim(s)
@@ -70,4 +70,5 @@ function M.announce_all(msg, limit, indent)
     TheNet:SystemMessage(M.reflow(msg, limit, indent))
 end
 
+util = M
 return M
