@@ -215,7 +215,7 @@ configuration_options = {
         },
         default = true
     }, {
-        name = "count_saplings",
+        name = "count_sapling",
         label = "Saplings",
         hover = "Count number of saplings in the world.",
         options = {
