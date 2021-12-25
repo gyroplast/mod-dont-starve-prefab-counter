@@ -53,6 +53,29 @@ function PrefabCounter:GetItemsToCount(configuration_options)
     return ret
 end
 
+-- pimped c_countprefabs to consider exceptions for prefab "variants"
+function PrefabCounter:CountPrefab(prefab)
+    local count = 0
+    for k,v in pairs(_G.Ents) do
+        -- spiderden tiers are represented by components.growable.stage
+        if v.prefab == "spiderden" and util.starts_with(prefab, "spiderden") then
+            Log:Trace("CountPrefab(\"%s\") handling %s", tostring(prefab), tostring(v.prefab))
+
+            if (prefab == "spiderden" and v.components.growable and v.components.growable.stage == 1) or
+               (prefab == "spiderden_2" and v.components.growable and v.components.growable.stage == 2) or
+               (prefab == "spiderden_3" and v.components.growable and v.components.growable.stage == 3) then
+                count = count + 1
+                Log:Trace("CountPrefab(\"%s\") counted %s stage %d", tostring(prefab), tostring(v.prefab), v.components.growable.stage)
+            end
+        -- non-exceptional prefabs are counted as-is
+        elseif v.prefab == prefab then
+            count = count + 1
+        end
+    end
+    Log:Trace("CountPrefab(\"%s\") -> %d", tostring(prefab), count)
+    return count
+end
+
 function PrefabCounter:Count()
     local ret = {}
     for display_name, item in pairs(self.items_to_count) do
