@@ -134,6 +134,15 @@ configuration_options = {
         },
         default = true
     }, {
+        name = "count_lureplant",
+        label = "Lureplant",
+        hover = "Count number of lureplants/meat bulbs in the world.",
+        options = {
+            {description = "Yes", data = true},
+            {description = "No", data = false}
+        },
+        default = true
+    }, {
         name = "count_mandrake_planted",
         label = "Mandrakes",
         hover = "Count number of planted mandrakes in the world.",

@@ -41,6 +41,7 @@ The mod can count the following items, prefab names given for reference:
   - Clockworks ("knight", "bishop", "rook", "knight_nightmare", "bishop_nightmare", "rook_nightmare")
   - Juicy Berry Bushes ("berrybush_juicy")
   - Killer Beehives ("wasphive")
+  - Lureplants ("lureplant")
   - Mandrakes ("mandrake_planted")
   - Marble Pillars ("marblepillar")
   - Marble Statues ("statue_marble", "statue_marble_muse", "statue_marble_pawn")
@@ -100,6 +101,7 @@ Below is a commented, comprehensive default configuration for this mod that can 
       count_chessjunk=true,          -- Broken Clockworks ("chessjunk1", "chessjunk2", "chessjunk3")
       count_clockworks=true,         -- Clockworks ("knight", "bishop", "rook", "knight_nightmare", "bishop_nightmare", "rook_nightmare")
       count_lightninggoat=true,      -- Volt Goats ("lightninggoat")
+      count_lureplant=true,          -- Lureplant ("lureplant")
       count_mandrake_planted=true,   -- Mandrakes ("mandrake_planted")
       count_marble_statues=true,     -- Marble Statues ("statue_marble", "statue_marble_muse", "statue_marble_pawn")
       count_marblepillar=true,       -- Marble Pillars ("marblepillar")
@@ -117,7 +119,7 @@ Below is a commented, comprehensive default configuration for this mod that can 
       count_wormhole=true,           -- Wormholes ("wormhole")
     },
     enabled=true
-  }
+  },
 ```
 
 ### Mod Installation Without Steam Workshop
