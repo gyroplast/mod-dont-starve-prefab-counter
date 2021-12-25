@@ -112,6 +112,7 @@ Below is a commented, comprehensive default configuration for this mod that can 
       count_reeds=true,              -- Reeds ("reeds", "reeds_water")
       count_rock_avocado_bush=true,  -- Stone Fruit Bushes ("rock_avocado_bush")
       count_sapling=true,            -- Saplings ("sapling")
+      multicount_spiders=true,       -- Spider Den 1/2/3/Queen/Eggs ("spiderden"/"spiderden_2"/"spiderden_3"/"spiderqueen"/"spidereggsack")
       count_statuemaxwell=true,      -- Maxwell Statues ("statuemaxwell")
       count_trap_starfish=true,      -- Anememies ("trap_starfish")
       count_walrus_camp=true,        -- Walrus Camps ("walrus_camp")

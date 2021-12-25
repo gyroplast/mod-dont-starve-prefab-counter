@@ -233,6 +233,15 @@ configuration_options = {
         },
         default = true
     }, {
+        name = "multicount_spiders",
+        label = "Spider Den 1/2/3/Queen/Eggs",
+        hover = "Count number of Spider Den Tier 1/2/3. Spider Queens, and Spider Eggs in the world.",
+        options = {
+            {description = "Yes", data = true},
+            {description = "No", data = false}
+        },
+        default = true
+    }, {
         name = "count_rock_avocado_bush",
         label = "Stone Fruit Bushes",
         hover = "Count number of stone fruit bushes in the world.",
