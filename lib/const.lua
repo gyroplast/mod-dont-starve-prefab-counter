@@ -11,7 +11,8 @@ M.COUNT_PREFAB_CONFIG_MAP = {
     marble_statues = {
         "statue_marble", "statue_marble_muse", "statue_marble_pawn"
     },
-    reeds = {"reeds", "reeds_water"}
+    reeds = {"reeds", "reeds_water"},
+    spiders = {"spiderden", "spiderden_2", "spiderden_3", "spiderqueen", "spidereggsack"}
 }
 
 C = M

@@ -33,6 +33,7 @@ The mod can count the following items, prefab names given for reference:
     [*] Rabbit Hutches ("rabbithouse")
     [*] Reeds ("reeds", "reeds_water")
     [*] Saplings ("sapling")
+    [*] Spider Den 1/2/3/Queen/Eggs ("spiderden"/"spiderden_2"/"spiderden_3"/"spiderqueen"/"spidereggsack")
     [*] Stone Fruit Bushes ("rock_avocado_bush")
     [*] Volt Goats ("lightninggoat")
     [*] Walrus Camps ("walrus_camp")
