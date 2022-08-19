@@ -215,6 +215,15 @@ configuration_options = {
         },
         default = true
     }, {
+        name = "multicount_monkeyhuts",
+        label = "Monkey Huts/Pods",
+        hover = "Count number of monkey huts and splumonkey pods in the world.",
+        options = {
+            {description = "Yes", data = true},
+            {description = "No", data = false}
+        },
+        default = true
+    }, {
         name = "count_pighouse",
         label = "Pig Houses",
         hover = "Count number of pig houses in the world.",
