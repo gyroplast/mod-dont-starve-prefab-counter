@@ -17,6 +17,7 @@ Just run `PC:Count()` in the remote console to show a fresh count of the items i
   - [Acknowledgements](#acknowledgements)
     - [Source Code](#source-code)
   - [Changelog](#changelog)
+    - [Version 1.0.4 (2022-08-19)](#version-104-2022-08-19)
     - [Version 1.0.3 (2021-12-26)](#version-103-2021-12-26)
     - [Version 1.0.2 (2021-10-06)](#version-102-2021-10-06)
     - [Version 1.0.1 (2021-10-04)](#version-101-2021-10-04)
@@ -139,7 +140,7 @@ If you prefer to install the mod without using the Steam Workshop, download the 
 .../
     Don't Starve Together Dedicated Server/
         mods/
-            Prefab_Counter-1.0.3/
+            Prefab_Counter-1.0.4/
                 lib/
                 LICENSE
                 modicon.tex
@@ -153,18 +154,18 @@ If you prefer to install the mod without using the Steam Workshop, download the 
             modsettings.lua
 ```
 
-Take note of the *exact* name of the mod directory, `Prefab_Counter-1.0.3` in this example. The mod configuration must refer to this exact, case-sensitive directory name. The actual directory name is not important, but it must be consistent with the `modoverrides.lua` entry for the mod, otherwise the server will not be able to associate the configuration with the mod, and the mod will stay disabled entirely.
+Take note of the *exact* name of the mod directory, `Prefab_Counter-1.0.4` in this example. The mod configuration must refer to this exact, case-sensitive directory name. The actual directory name is not important, but it must be consistent with the `modoverrides.lua` entry for the mod, otherwise the server will not be able to associate the configuration with the mod, and the mod will stay disabled entirely.
 
 To achieve the required consistency, you may now either just rename the mod directory to `workshop-2618765953`, and edit the `modoverrides.lua` files exactly as described in the [Steam Workshop Installation above](#edit-modoverrideslua-in-servershard-directory), 
 
 **OR**
 
-replace the `workshop-2618765953` reference in the `modoverrides.lua` file with the exact, case-sensitive name of the mod, i. e. `Prefab_Counter-1.0.3` in this case, like this:
+replace the `workshop-2618765953` reference in the `modoverrides.lua` file with the exact, case-sensitive name of the mod, i. e. `Prefab_Counter-1.0.4` in this case, like this:
 
 ```lua
   -- Prefab Counter by Gyroplast
   -- https://steamcommunity.com/sharedfiles/filedetails/?id=2618765953
-  ["Prefab_Counter-1.0.3"]={
+  ["Prefab_Counter-1.0.4"]={
     configuration_options={
       [""]="",
       ...
@@ -198,6 +199,14 @@ applicable to the sources unless noted otherwise. Mod sources are hosted on
 
 Changelog
 ---------
+
+### Version 1.0.4 (2022-08-19)
+  **New Features**
+  - add ancient statues and monkey huts counter.
+    Closes [#7](https://github.com/gyroplast/mod-dont-starve-prefab-counter/issues/7).
+
+    Ancient Statues are counted separately for their variant with and without gem, to determine thulecite and gem availability in the ruins.
+    Monkey Huts and Splumonkey Pods now are both counted as well.
 
 ### Version 1.0.3 (2021-12-26)
   **New Features**
