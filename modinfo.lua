@@ -62,6 +62,24 @@ configuration_options = {
         options = {{description = "", data = ""}},
         default = ""
     }, {
+        name = "count_ruins_statue",
+        label = "Ancient Statues",
+        hover = "Count number of ancient statues with gems in the world.",
+        options = {
+            {description = "Yes", data = true},
+            {description = "No", data = false}
+        },
+        default = true
+    }, {
+        name = "count_ruins_statue_nogem",
+        label = "Ancient Statues, No Gem",
+        hover = "Count number of ancient statues without gems in the world.",
+        options = {
+            {description = "Yes", data = true},
+            {description = "No", data = false}
+        },
+        default = true
+    }, {
         name = "count_trap_starfish",
         label = "Anenemies",
         hover = "Count number of anenemies in the world.",

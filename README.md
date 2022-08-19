@@ -34,6 +34,8 @@ Certain items only ever spawn in the Caves, so if you're interested in those, yo
 
 The mod can count the following items, prefab names given for reference:
 
+  - Ancient Statues ("ruins_statue_head", "ruins_statue_mage")
+  - Ancient Statues, No Gems ("ruins_statue_head_nogem", "ruins_statue_mage_nogem")
   - Anememies ("trap_starfish")
   - Beefalos ("beefalo")
   - Beehives ("beehive")
@@ -113,6 +115,8 @@ Below is a commented, comprehensive default configuration for this mod that can 
       count_rabbithouse=true,        -- Rabbit Hutches ("rabbithouse")
       count_reeds=true,              -- Reeds ("reeds", "reeds_water")
       count_rock_avocado_bush=true,  -- Stone Fruit Bushes ("rock_avocado_bush")
+      count_ruins_statue=true,       -- Ancient Statues with Gems ("ruins_statue_head", "ruins_statue_mage")
+      count_ruins_statue_nogem=true, -- Ancient Statues without Gems ("ruins_statue_head_nogem", "ruins_statue_mage_nogem")
       count_sapling=true,            -- Saplings ("sapling")
       multicount_spiders=true,       -- Spider Den 1/2/3/Queen/Eggs ("spiderden"/"spiderden_2"/"spiderden_3"/"spiderqueen"/"spidereggsack")
       count_statuemaxwell=true,      -- Maxwell Statues ("statuemaxwell")
