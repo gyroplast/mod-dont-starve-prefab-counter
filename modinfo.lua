@@ -6,7 +6,7 @@ _src_url = "https://github.com/gyroplast/mod-dont-starve-prefab-counter"
 
 name = "Prefab Counter"
 author = "Gyroplast"
-version = "1.0.3"
+version = "1.0.4"
 forumthread = ""
 api_version = 10
 dont_starve_compatible = false
@@ -61,6 +61,24 @@ configuration_options = {
         hover = "",
         options = {{description = "", data = ""}},
         default = ""
+    }, {
+        name = "count_ruins_statue",
+        label = "Ancient Statues",
+        hover = "Count number of ancient statues with gems in the world.",
+        options = {
+            {description = "Yes", data = true},
+            {description = "No", data = false}
+        },
+        default = true
+    }, {
+        name = "count_ruins_statue_nogem",
+        label = "Ancient Statues, No Gem",
+        hover = "Count number of ancient statues without gems in the world.",
+        options = {
+            {description = "Yes", data = true},
+            {description = "No", data = false}
+        },
+        default = true
     }, {
         name = "count_trap_starfish",
         label = "Anenemies",
@@ -191,6 +209,15 @@ configuration_options = {
         name = "count_mermhouse",
         label = "Merm Houses",
         hover = "Count number of merm houses in the world.",
+        options = {
+            {description = "Yes", data = true},
+            {description = "No", data = false}
+        },
+        default = true
+    }, {
+        name = "multicount_monkeyhuts",
+        label = "Monkey Huts/Pods",
+        hover = "Count number of monkey huts and splumonkey pods in the world.",
         options = {
             {description = "Yes", data = true},
             {description = "No", data = false}

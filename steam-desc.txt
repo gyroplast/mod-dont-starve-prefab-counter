@@ -15,6 +15,8 @@ Certain items only ever spawn in the Caves, so if you're interested in those, yo
 The mod can count the following items, prefab names given for reference:
 
 [list]
+    [*] Ancient Statues ("ruins_statue_head", "ruins_statue_mage")
+    [*] Ancient Statues, No Gems ("ruins_statue_head_nogem", "ruins_statue_mage_nogem")
     [*] Anememies ("trap_starfish")
     [*] Beefalos ("beefalo")
     [*] Beehives ("beehive")
@@ -29,6 +31,7 @@ The mod can count the following items, prefab names given for reference:
     [*] Marble Trees ("marbletree")
     [*] Maxwell Statues ("statuemaxwell")
     [*] Merm Houses ("mermhouse")
+    [*] Monkey Huts/Pods ("monkeyhut"/"monkeybarrel")
     [*] Pig Houses ("pighouse")
     [*] Rabbit Hutches ("rabbithouse")
     [*] Reeds ("reeds", "reeds_water")
